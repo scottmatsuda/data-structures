@@ -6,6 +6,7 @@ var Stack = function(storage, length) {
   return stack;
 };
 
+var stackMethods = {};
 stackMethods.push = function(value) {
   this.storage[this.length] = value;
   this.length++;

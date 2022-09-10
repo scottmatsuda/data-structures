@@ -1,5 +1,5 @@
 var Queue = function(storage, beg, end) {
-
+  debugger;
   var queue = Object.create(queueMethods);
   queue.storage = {};
   queue.beg = 0;
@@ -7,6 +7,7 @@ var Queue = function(storage, beg, end) {
   return queue;
 };
 
+var queueMethods = {};
 queueMethods.enqueue = function(value) {
   this.storage[this.end] = value;
   this.end++;

@@ -43,7 +43,7 @@ BinarySearchTree.prototype.contains = function(value) {
     }
   }
   return false;
-}
+};
 
 BinarySearchTree.prototype.depthFirstLog = function(cb) {
   cb(this.value);

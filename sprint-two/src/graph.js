@@ -7,7 +7,7 @@ Graph.prototype.addNode = function(node) {
 };
 
 Graph.prototype.contains = function(node) {
-  return this.newGraph[node] ? true: false;
+  return this.newGraph[node] ? true : false;
 };
 
 Graph.prototype.removeNode = function(node) {
