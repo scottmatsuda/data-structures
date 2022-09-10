@@ -1,13 +1,12 @@
 var Set = function() {
   var set = Object.create(setPrototype);
-  set._storage = {}; // fix m
+  set._storage = {};
   return set;
 };
 
 var setPrototype = {};
 
 setPrototype.add = function(item) {
-  // if key equals item
   if (this._storage[item] !== undefined) {
     return;
   } else {
@@ -17,9 +16,9 @@ setPrototype.add = function(item) {
 };
 
 setPrototype.contains = function(item) {
-  if(this._storage[item]){
+  if (this._storage[item]) {
     return true;
-  }else {
+  } else {
     return false;
   }
 };

@@ -1,7 +1,7 @@
 var Tree = function(value) {
   var newTree = {};
   newTree.value = value;
- newTree.addChild = treeMethods.addChild;
+  newTree.addChild = treeMethods.addChild;
   newTree.contains = treeMethods.contains;
   newTree.children = [];
 
@@ -30,8 +30,6 @@ treeMethods.contains = function(target) {
 
 };
 
-// inputs: addChild => value, contains => target
-   //outputs: contains => boolean
 /*
  * Complexity: What is the time complexity of the above functions?
  */
