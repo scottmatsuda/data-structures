@@ -1,13 +1,11 @@
 var Queue = function(storage, beg, end) {
+
   var queue = Object.create(queueMethods);
   queue.storage = {};
   queue.beg = 0;
   queue.end = 0;
-
   return queue;
 };
-
-var queueMethods = {};
 
 queueMethods.enqueue = function(value) {
   this.storage[this.end] = value;
